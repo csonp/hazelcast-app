@@ -1,0 +1,28 @@
+hazelcast:
+  cluster-name: k8s
+
+  instance-name: hzInstance
+
+  management-center:
+    scripting-enabled: false
+
+  network:
+    port:
+      port: 5701
+
+    join:
+      multicast:
+        enabled: false
+      kubernetes:
+        enabled: true
+        service-name: hazelcast-server
+#  partition-group:
+#    enabled: true
+#    group-type: CUSTOM
+#    member-group:
+#      - - 10.10.0.*
+#        - 10.10.3.*
+#        - 10.10.5.*
+#      - - 10.10.10.10-100
+#        - 10.10.1.*
+#        - 10.10.2.*
