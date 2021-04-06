@@ -87,7 +87,7 @@ spec:
       volumes:
       - name: config
         configMap:
-        - name: hazelcast-config
+          name: hazelcast-config
 ---
 kind: Service
 apiVersion: v1
